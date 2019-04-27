@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using AproxyNews.APIRequestService.ModelFactory;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -6,6 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using ProxyNews.APIRequestService.Abstract;
 using ProxyNews.APIRequestService.DTOs;
+using ProxyNews.APIRequestService.HttpClient;
 using ProxyNews.APIRequestService.NewsList;
 using ProxyNews.HttpClientFactoryWrapper.Abstract;
 using ProxyNews.Json.ModelFactory;
@@ -39,6 +41,8 @@ namespace ProxyNews.Web
             services.AddScoped<IHttpClientFactoryWrapper, HttpClientFactory.HttpClientFactoryWrapper>();
             services.AddScoped<IJsonDeserializer, JsonModelFactory>();
             services.AddScoped<IViewModelFactory, ViewModelFactory>();
+            services.AddScoped<IHttpClientService, HttpClientService>();
+            services.AddScoped<IServiceModelFactory, ServiceModelFactory>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

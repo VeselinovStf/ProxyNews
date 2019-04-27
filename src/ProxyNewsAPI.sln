@@ -39,35 +39,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{1EEF1FE8-8
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{C1D23B89-0D76-42CA-A0CD-05345015DFF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.Data.Models.Abstract", "ProxyNews.Data.Models.Abstract\ProxyNews.Data.Models.Abstract.csproj", "{5CA2A31A-7DD5-46BF-8550-3E85CD87B647}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.Data.Models.Abstract", "ProxyNews.Data.Models.Abstract\ProxyNews.Data.Models.Abstract.csproj", "{5CA2A31A-7DD5-46BF-8550-3E85CD87B647}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.Data.Models.Implementations", "ProxyNews.Data.Models.Implementations\ProxyNews.Data.Models.Implementations.csproj", "{F197BDCE-E3A4-4CF7-AB80-37160840321E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.Data.Models.Implementations", "ProxyNews.Data.Models.Implementations\ProxyNews.Data.Models.Implementations.csproj", "{F197BDCE-E3A4-4CF7-AB80-37160840321E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{2F97F296-B7A0-4337-BAEE-36EABCBF6AD8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Json", "Json", "{7D6EF8BE-C5BE-4264-AB5E-86CD61D1D0DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.Json.ModelFactory", "ProxyNews.Json.ModelFactory\ProxyNews.Json.ModelFactory.csproj", "{1FA8EADA-5713-4509-A9EA-811755636041}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.Json.ModelFactory", "ProxyNews.Json.ModelFactory\ProxyNews.Json.ModelFactory.csproj", "{1FA8EADA-5713-4509-A9EA-811755636041}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.Json.ModelFactory.Abstract", "ProxyNews.Json.ModelFactory.Abstract\ProxyNews.Json.ModelFactory.Abstract.csproj", "{AA6EC0B5-21C8-4058-8023-6794B2A65AFE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.Json.ModelFactory.Abstract", "ProxyNews.Json.ModelFactory.Abstract\ProxyNews.Json.ModelFactory.Abstract.csproj", "{AA6EC0B5-21C8-4058-8023-6794B2A65AFE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HttpClientFactoryWrapper", "HttpClientFactoryWrapper", "{C5F9D31D-FE71-4EE4-9968-E07F741C0A3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.HttpClientFactoryWrapper.Abstract", "ProxyNews.HttpClientFactoryWrapper.Abstract\ProxyNews.HttpClientFactoryWrapper.Abstract.csproj", "{5ADECD84-B188-4F95-9621-B2E98A83C613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.HttpClientFactoryWrapper.Abstract", "ProxyNews.HttpClientFactoryWrapper.Abstract\ProxyNews.HttpClientFactoryWrapper.Abstract.csproj", "{5ADECD84-B188-4F95-9621-B2E98A83C613}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.HttpClientFactory", "ProxyNews.HttpClientFactory\ProxyNews.HttpClientFactory.csproj", "{680BAE7A-3E88-4C34-A2C9-CA6289FCA38D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.HttpClientFactory", "ProxyNews.HttpClientFactory\ProxyNews.HttpClientFactory.csproj", "{680BAE7A-3E88-4C34-A2C9-CA6289FCA38D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIRequestService", "APIRequestService", "{8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GET_APIRequestService", "GET_APIRequestService", "{8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewsList", "NewsList", "{CCF36039-A7AA-4996-BB19-D44B4E6DF244}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.APIRequestService.NewsList", "ProxyNews.APIRequestService.NewsList\ProxyNews.APIRequestService.NewsList.csproj", "{A84D44B5-B97A-4994-AAB2-13836663C9D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.APIRequestService.NewsList", "ProxyNews.APIRequestService.NewsList\ProxyNews.APIRequestService.NewsList.csproj", "{A84D44B5-B97A-4994-AAB2-13836663C9D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.APIRequestService.Abstract", "ProxyNews.APIRequestService.Abstract\ProxyNews.APIRequestService.Abstract.csproj", "{6D93859E-B08F-4DB6-B13B-9B578309205D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.APIRequestService.Abstract", "ProxyNews.APIRequestService.Abstract\ProxyNews.APIRequestService.Abstract.csproj", "{6D93859E-B08F-4DB6-B13B-9B578309205D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.APIRequestService.DTOs", "ProxyNews.APIRequestService.DTOs\ProxyNews.APIRequestService.DTOs.csproj", "{504DB89A-5607-448F-99E0-39FED6628A04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.APIRequestService.DTOs", "ProxyNews.APIRequestService.DTOs\ProxyNews.APIRequestService.DTOs.csproj", "{504DB89A-5607-448F-99E0-39FED6628A04}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.Json.Models", "ProxyNews.Json.Models\ProxyNews.Json.Models.csproj", "{2B035CB0-4592-4D71-8FA1-FB43F4F62573}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.Json.Models", "ProxyNews.Json.Models\ProxyNews.Json.Models.csproj", "{2B035CB0-4592-4D71-8FA1-FB43F4F62573}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.APIRequestService.HttpClient", "ProxyNews.APIRequestService.HttpClient\ProxyNews.APIRequestService.HttpClient.csproj", "{5EAA0F78-33FB-4FAA-8DC3-A08C544C44FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AproxyNews.APIRequestService.ModelFactory", "AproxyNews.APIRequestService.ModelFactory\AproxyNews.APIRequestService.ModelFactory.csproj", "{B76D0246-CCEE-4DBC-B315-55BC007A0A40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -167,6 +171,14 @@ Global
 		{2B035CB0-4592-4D71-8FA1-FB43F4F62573}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B035CB0-4592-4D71-8FA1-FB43F4F62573}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B035CB0-4592-4D71-8FA1-FB43F4F62573}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAA0F78-33FB-4FAA-8DC3-A08C544C44FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAA0F78-33FB-4FAA-8DC3-A08C544C44FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAA0F78-33FB-4FAA-8DC3-A08C544C44FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAA0F78-33FB-4FAA-8DC3-A08C544C44FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B76D0246-CCEE-4DBC-B315-55BC007A0A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76D0246-CCEE-4DBC-B315-55BC007A0A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76D0246-CCEE-4DBC-B315-55BC007A0A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76D0246-CCEE-4DBC-B315-55BC007A0A40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -201,6 +213,8 @@ Global
 		{6D93859E-B08F-4DB6-B13B-9B578309205D} = {8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}
 		{504DB89A-5607-448F-99E0-39FED6628A04} = {8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}
 		{2B035CB0-4592-4D71-8FA1-FB43F4F62573} = {7D6EF8BE-C5BE-4264-AB5E-86CD61D1D0DE}
+		{5EAA0F78-33FB-4FAA-8DC3-A08C544C44FA} = {8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}
+		{B76D0246-CCEE-4DBC-B315-55BC007A0A40} = {8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE46DB52-3FDF-484E-8E34-BC27164BEC41}

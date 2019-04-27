@@ -13,8 +13,10 @@
 
 
   <ItemGroup>
+    <ProjectReference Include="..\AproxyNews.APIRequestService.ModelFactory\AproxyNews.APIRequestService.ModelFactory.csproj" />
     <ProjectReference Include="..\ProxyNews.APIRequestService.Abstract\ProxyNews.APIRequestService.Abstract.csproj" />
     <ProjectReference Include="..\ProxyNews.APIRequestService.DTOs\ProxyNews.APIRequestService.DTOs.csproj" />
+    <ProjectReference Include="..\ProxyNews.APIRequestService.HttpClient\ProxyNews.APIRequestService.HttpClient.csproj" />
     <ProjectReference Include="..\ProxyNews.APIRequestService.NewsList\ProxyNews.APIRequestService.NewsList.csproj" />
     <ProjectReference Include="..\ProxyNews.HttpClientFactory\ProxyNews.HttpClientFactory.csproj" />
     <ProjectReference Include="..\ProxyNews.Json.ModelFactory\ProxyNews.Json.ModelFactory.csproj" />
