@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <AssemblyName>RssReader</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RssReader.Abstract\RssReader.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.Model.Abstract\RssReader.Model.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.ModelFactory.Abstract\RssReader.ModelFactory.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.Models.Implementations\RssReader.Models.Implementations.csproj" />
+    <ProjectReference Include="..\RssReader.WebClientWrapper.Abstract\RssReader.WebClientWrapper.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.XDocumentWrapper.Abstract\RssReader.XDocumentWrapper.Abstract.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\..\..\Program Files\dotnet\sdk\NuGetFallbackFolder\newtonsoft.json\11.0.2\lib\netstandard2.0\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

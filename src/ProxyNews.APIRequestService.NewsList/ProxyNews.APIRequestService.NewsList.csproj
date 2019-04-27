@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProxyNews.APIRequestService.Abstract\ProxyNews.APIRequestService.Abstract.csproj" />
+    <ProjectReference Include="..\ProxyNews.APIRequestService.DTOs\ProxyNews.APIRequestService.DTOs.csproj" />
+    <ProjectReference Include="..\ProxyNews.HttpClientFactoryWrapper.Abstract\ProxyNews.HttpClientFactoryWrapper.Abstract.csproj" />
+    <ProjectReference Include="..\ProxyNews.Json.ModelFactory.Abstract\ProxyNews.Json.ModelFactory.Abstract.csproj" />
+  </ItemGroup>
+
+</Project>
