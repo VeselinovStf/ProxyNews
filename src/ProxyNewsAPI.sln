@@ -73,6 +73,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProxyNews.APIRequestService
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AproxyNews.APIRequestService.ModelFactory", "AproxyNews.APIRequestService.ModelFactory\AproxyNews.APIRequestService.ModelFactory.csproj", "{B76D0246-CCEE-4DBC-B315-55BC007A0A40}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProxyNews.APIRequestService.ContentFormat", "ProxyNews.APIRequestService.ContentFormat\ProxyNews.APIRequestService.ContentFormat.csproj", "{7AB51902-4E47-4A46-8A24-25707536B357}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -179,6 +181,10 @@ Global
 		{B76D0246-CCEE-4DBC-B315-55BC007A0A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B76D0246-CCEE-4DBC-B315-55BC007A0A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B76D0246-CCEE-4DBC-B315-55BC007A0A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AB51902-4E47-4A46-8A24-25707536B357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AB51902-4E47-4A46-8A24-25707536B357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AB51902-4E47-4A46-8A24-25707536B357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AB51902-4E47-4A46-8A24-25707536B357}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -215,6 +221,7 @@ Global
 		{2B035CB0-4592-4D71-8FA1-FB43F4F62573} = {7D6EF8BE-C5BE-4264-AB5E-86CD61D1D0DE}
 		{5EAA0F78-33FB-4FAA-8DC3-A08C544C44FA} = {8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}
 		{B76D0246-CCEE-4DBC-B315-55BC007A0A40} = {8A7F4886-1BCF-4BC5-8515-5B1FE77BA0C0}
+		{7AB51902-4E47-4A46-8A24-25707536B357} = {CCF36039-A7AA-4996-BB19-D44B4E6DF244}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE46DB52-3FDF-484E-8E34-BC27164BEC41}
