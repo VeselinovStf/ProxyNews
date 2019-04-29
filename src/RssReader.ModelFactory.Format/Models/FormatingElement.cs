@@ -9,8 +9,15 @@ namespace RssReader.ModelFactory.Format.Models
     {
         private const string P_OPPEN_ELEMENTS = "<p>";
         private const string P_CLOSE_ELEMENTS = "</p>";
+        private const string STRONG_OPEN_ELEMENTS = "<strong>";
+        private const string STRONG_CLOSE_ELEMENTS = "</strong>";
 
-        public string[] FormatElements = { P_OPPEN_ELEMENTS, P_CLOSE_ELEMENTS };
+        public string[] FormatElements = {
+            P_OPPEN_ELEMENTS,
+            P_CLOSE_ELEMENTS,
+            STRONG_OPEN_ELEMENTS,
+            STRONG_CLOSE_ELEMENTS
+        };
 
         string[] IModelFactoryFormatingElement.FormatElements
         {
