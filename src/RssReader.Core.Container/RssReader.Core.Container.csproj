@@ -13,6 +13,7 @@
     <ProjectReference Include="..\RssReader.Model.Abstract\RssReader.Model.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.ModelFactory.Abstract\RssReader.ModelFactory.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.ModelFactory.Implementation\RssReader.ModelFactory.Implementation.csproj" />
+    <ProjectReference Include="..\RssReader.ModelFactory.Validator\RssReader.ModelFactory.Validator.csproj" />
     <ProjectReference Include="..\RssReader.WebClientWrapper.Abstract\RssReader.WebClientWrapper.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.WebClientWrapper\RssReader.WebClientWrapper.csproj" />
     <ProjectReference Include="..\RssReader.XDocumentWrapper.Abstract\RssReader.XDocumentWrapper.Abstract.csproj" />
