@@ -11,7 +11,9 @@
   <ItemGroup>
     <ProjectReference Include="..\RssReader.Model.Abstract\RssReader.Model.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.ModelFactory.Abstract\RssReader.ModelFactory.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.ModelFactory.Format.Abstract\RssReader.ModelFactory.Format.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.ModelFactory.Validator.Abstract\RssReader.ModelFactory.Validator.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.ModelFactory.WElementInterpretator.Abstract\RssReader.ModelFactory.WElementInterpretator.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.Models.Implementations\RssReader.Models.Implementations.csproj" />
   </ItemGroup>
 

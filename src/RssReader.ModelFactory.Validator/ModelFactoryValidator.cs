@@ -14,16 +14,16 @@ namespace RssReader.ModelFactory.Validator
             this.factoryStringValidator = factoryStringValidator;
         }
 
-        public BaseRssFeed ValidateRssFeedModel(XElement x)
+        public BaseRssFeed ValidateRssFeedModel(BaseRssFeed x)
         {
             try
             {
                 return new BaseRssFeed()
                 {
-                    Title = this.factoryStringValidator.StringIsNullOrWhiteSpace((((string)x.Element("title"))), "Title"),
-                    Link = this.factoryStringValidator.StringIsNullOrWhiteSpace((((string)x.Element("link"))), "Link"),
-                    Description = this.factoryStringValidator.StringIsNullOrWhiteSpace((((string)x.Element("description"))), "Description"),
-                    PubDate = this.factoryStringValidator.StringIsNullOrWhiteSpace((((string)x.Element("pubDate"))), "PubDate")
+                    Title = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.Title, "Title"),
+                    Link = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.Link, "Link"),
+                    Description = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.Description, "Description"),
+                    PubDate = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.PubDate, "PubDate")
                 };
             }
             catch (Exception ex)

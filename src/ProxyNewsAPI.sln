@@ -79,6 +79,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.ModelFactory.Vali
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.ModelFactory.Validator.Abstract", "RssReader.ModelFactory.Validator.Abstract\RssReader.ModelFactory.Validator.Abstract.csproj", "{140B0531-037B-49DF-98FA-D7AC451A6DD9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.ModelFactory.XElementInterpretator", "RssReader.ModelFactory.XElementInterpretator\RssReader.ModelFactory.XElementInterpretator.csproj", "{47A85B75-FA54-4E4E-98DC-A181A6373996}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.ModelFactory.WElementInterpretator.Abstract", "RssReader.ModelFactory.WElementInterpretator.Abstract\RssReader.ModelFactory.WElementInterpretator.Abstract.csproj", "{3D052A2F-3AA4-4FEA-A2BF-4C3BDCFB1EE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.ModelFactory.Format", "RssReader.ModelFactory.Format\RssReader.ModelFactory.Format.csproj", "{829BCEA1-9AE2-40F3-96D3-A66287943479}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.ModelFactory.Format.Abstract", "RssReader.ModelFactory.Format.Abstract\RssReader.ModelFactory.Format.Abstract.csproj", "{EFD9398D-1F7B-4BFF-B85E-BBF98979F5BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -197,6 +205,22 @@ Global
 		{140B0531-037B-49DF-98FA-D7AC451A6DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{140B0531-037B-49DF-98FA-D7AC451A6DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{140B0531-037B-49DF-98FA-D7AC451A6DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47A85B75-FA54-4E4E-98DC-A181A6373996}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47A85B75-FA54-4E4E-98DC-A181A6373996}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47A85B75-FA54-4E4E-98DC-A181A6373996}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47A85B75-FA54-4E4E-98DC-A181A6373996}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D052A2F-3AA4-4FEA-A2BF-4C3BDCFB1EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D052A2F-3AA4-4FEA-A2BF-4C3BDCFB1EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D052A2F-3AA4-4FEA-A2BF-4C3BDCFB1EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D052A2F-3AA4-4FEA-A2BF-4C3BDCFB1EE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829BCEA1-9AE2-40F3-96D3-A66287943479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829BCEA1-9AE2-40F3-96D3-A66287943479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829BCEA1-9AE2-40F3-96D3-A66287943479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829BCEA1-9AE2-40F3-96D3-A66287943479}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFD9398D-1F7B-4BFF-B85E-BBF98979F5BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFD9398D-1F7B-4BFF-B85E-BBF98979F5BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFD9398D-1F7B-4BFF-B85E-BBF98979F5BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFD9398D-1F7B-4BFF-B85E-BBF98979F5BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -236,6 +260,10 @@ Global
 		{7AB51902-4E47-4A46-8A24-25707536B357} = {CCF36039-A7AA-4996-BB19-D44B4E6DF244}
 		{802D40A6-270F-4E4E-B5DD-CAF6B675DEB8} = {7EFEBC2B-D9D5-4504-8BE6-3FD70D8482B2}
 		{140B0531-037B-49DF-98FA-D7AC451A6DD9} = {7EFEBC2B-D9D5-4504-8BE6-3FD70D8482B2}
+		{47A85B75-FA54-4E4E-98DC-A181A6373996} = {7EFEBC2B-D9D5-4504-8BE6-3FD70D8482B2}
+		{3D052A2F-3AA4-4FEA-A2BF-4C3BDCFB1EE8} = {7EFEBC2B-D9D5-4504-8BE6-3FD70D8482B2}
+		{829BCEA1-9AE2-40F3-96D3-A66287943479} = {7EFEBC2B-D9D5-4504-8BE6-3FD70D8482B2}
+		{EFD9398D-1F7B-4BFF-B85E-BBF98979F5BE} = {7EFEBC2B-D9D5-4504-8BE6-3FD70D8482B2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DE46DB52-3FDF-484E-8E34-BC27164BEC41}

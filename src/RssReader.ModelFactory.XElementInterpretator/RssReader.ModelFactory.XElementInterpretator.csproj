@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RssReader.ModelFactory.WElementInterpretator.Abstract\RssReader.ModelFactory.WElementInterpretator.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.Models.Implementations\RssReader.Models.Implementations.csproj" />
+  </ItemGroup>
+
+</Project>

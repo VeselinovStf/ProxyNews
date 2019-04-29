@@ -16,6 +16,11 @@ using System.Net;
 using System.Xml.Linq;
 using RssReader.ModelFactory.Validator;
 using RssReader.ModelFactory.Validator.Abstract;
+using RssReader.ModelFactory.WElementInterpretator.Abstract;
+using RssReader.ModelFactory.XElementInterpretator.Models.RssFeed;
+using RssReader.ModelFactory.Format.Abstract;
+using RssReader.ModelFactory.Format.Models.RssFeed;
+using RssReader.ModelFactory.Format.Models;
 
 namespace Utility.RssReading.RssReader.Core.Container
 {
@@ -42,6 +47,9 @@ namespace Utility.RssReading.RssReader.Core.Container
             services.AddScoped<IRssReaderFeed, RssReaderFeed>(r => new RssReaderFeed(rssFeeds));
             services.AddScoped<IModelFactoryValidator<BaseRssFeed>, ModelFactoryValidator>();
             services.AddScoped<IModelFactoryStringValidator, ModelFactoryStringValidator>();
+            services.AddScoped<IXelementModelInterpretator<BaseRssFeed>, RssFeedXElementModelInterpretator>();
+            services.AddScoped<IModelFactoryModelFormat<BaseRssFeed>, RssReaderModelFactoryModelFormat>();
+            services.AddScoped<IModelFactoryFormatingElement, FormatingElement>();
         }
     }
 }
