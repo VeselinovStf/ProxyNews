@@ -28,7 +28,7 @@ namespace RssReader.ModelFactory.XElementInterpretator.Models.RssFeed
                     Link = this.xelementToStringConvertor.Get("link", x),
                     Description = this.xelementToStringConvertor.Get("description", x),
                     PubDate = this.xelementToStringConvertor.Get("pubDate", x),
-                    ImageSRC = this.xelementToImageProps.GetFrom("url", x),
+                    ImageSRC = this.xelementToImageProps.GetFrom("src", x),
                     ImageALT = this.xelementToImageProps.GetFrom("alt", x),
                 };
             }
