@@ -13,12 +13,43 @@ namespace RssReader.ModelFactory.XElementInterpretator.Convertors
             return (string)element.Element(elementName);
         }
 
-        //TODO: FIX IMAGE RSS
+        //TODO: FIX IMAGE RSS - EXPAND THIS FUNCTION - Create specific implementations for any RSS address
         public string GetFrom(string elementName, XElement element)
         {
-            var test = element.Element("enclosure").Attribute("url");
+            //TODO: This is for testing !!!
+            //This case is for first api
+            try
+            {
+                var test = element.Element("enclosure").Attribute("url");
 
-            return test.Value;
+                if (test != null)
+                {
+                    return test.Value;
+                }
+            }
+            catch (Exception)
+            {
+                //This case is for second
+                var t2 = element.Element("description").Value;
+                var imgStartIndex = t2.IndexOf("src=\"") + 5;
+
+                StringBuilder resultUrl = new StringBuilder();
+                for (int i = imgStartIndex; i < t2.Length; i++)
+                {
+                    if (t2[i] == '"')
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        resultUrl.Append(t2[i]);
+                    }
+                }
+
+                return resultUrl.ToString();
+            }
+
+            throw new ArgumentException("Boom...");
         }
     }
 }
