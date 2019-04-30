@@ -18,7 +18,9 @@ namespace ProxyNews.Web.Models
                     Description = y.Description,
                     Link = y.Link,
                     PubDate = y.PubDate,
-                    Title = y.Title
+                    Title = y.Title,
+                    ImageALT = y.ImageALT,
+                    ImageSRC = y.ImageURL
                 }))
             };
         }

@@ -13,5 +13,9 @@ namespace ProxyNews.APIRequestService.DTOs
         public string Link { get; set; }
 
         public string PubDate { get; set; }
+
+        public string ImageURL { get; set; }
+
+        public string ImageALT { get; set; }
     }
 }

@@ -16,7 +16,9 @@ namespace AproxyNews.APIRequestService.ModelFactory
                     Description = y.Description,
                     Link = y.Link,
                     PubDate = y.PubDate,
-                    Title = y.Title
+                    Title = y.Title,
+                    ImageALT = y.ImageALT,
+                    ImageURL = y.ImageSRC
                 }))
             };
         }

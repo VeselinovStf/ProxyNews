@@ -14,5 +14,9 @@ namespace ProxyNews.API.Models
         public string Link { get; set; }
 
         public string PubDate { get; set; }
+
+        public string ImageSRC { get; set; }
+
+        public string ImageALT { get; set; }
     }
 }

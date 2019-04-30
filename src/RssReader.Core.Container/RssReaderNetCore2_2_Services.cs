@@ -10,7 +10,6 @@ using Utility.RssReading.RssReader.WebClientWrapper;
 using Utility.RssReading.RssReader.WebClientWrapper.Abstract;
 using Utility.RssReading.RssReader.XDocumentWrapper;
 using Utility.RssReading.RssReader.XDocumentWrapper.Abstract;
-using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Xml.Linq;
@@ -21,6 +20,7 @@ using RssReader.ModelFactory.XElementInterpretator.Models.RssFeed;
 using RssReader.ModelFactory.Format.Abstract;
 using RssReader.ModelFactory.Format.Models.RssFeed;
 using RssReader.ModelFactory.Format.Models;
+using RssReader.ModelFactory.XElementInterpretator.Convertors;
 
 namespace Utility.RssReading.RssReader.Core.Container
 {
@@ -50,6 +50,8 @@ namespace Utility.RssReading.RssReader.Core.Container
             services.AddScoped<IXelementModelInterpretator<BaseRssFeed>, RssFeedXElementModelInterpretator>();
             services.AddScoped<IModelFactoryModelFormat<BaseRssFeed>, RssReaderModelFactoryModelFormat>();
             services.AddScoped<IModelFactoryFormatingElement, FormatingElement>();
+            services.AddScoped<IXElementToString, ConvertFromXElement>();
+            services.AddScoped<IXElementToImageProps, ConvertFromXElement>();
         }
     }
 }

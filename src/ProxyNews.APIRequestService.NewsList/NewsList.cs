@@ -43,9 +43,6 @@ namespace ProxyNews.APIRequestService.NewsList
 
                 var returnModel = this.modelFactory.Create(result);
 
-                //TODO: RETURN MODEL VALIDATION !!!
-                //TODO: Format incomming data
-
                 if (returnModel == null)
                 {
                     throw new ArgumentException("MODEL CREATION FAILED");

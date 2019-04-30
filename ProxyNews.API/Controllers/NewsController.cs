@@ -20,14 +20,26 @@ namespace ProxyNews.API.Controllers
         [HttpGet]
         public ActionResult<RssFeedListModel> GetAll()
         {
-            var RSSFeedData = this.rssFeedRepo.GetListedFeed("item");
-
-            var model = new RssFeedListModel()
+            try
             {
-                RssList = RSSFeedData
-            };
+                var RSSFeedData = this.rssFeedRepo.GetListedFeed("item");
 
-            return Ok(model);
+                if (RSSFeedData == null)
+                {
+                    return NotFound("Rss Feed Is Down");
+                }
+
+                var model = new RssFeedListModel()
+                {
+                    RssList = RSSFeedData
+                };
+
+                return Ok(model);
+            }
+            catch (System.Exception)
+            {
+                return NotFound("Unable to create rss connection");
+            }
         }
     }
 }
