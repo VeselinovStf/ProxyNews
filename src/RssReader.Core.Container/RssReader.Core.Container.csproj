@@ -20,6 +20,7 @@
     <ProjectReference Include="..\RssReader.WebClientWrapper\RssReader.WebClientWrapper.csproj" />
     <ProjectReference Include="..\RssReader.XDocumentWrapper.Abstract\RssReader.XDocumentWrapper.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.XDocumentWrapper\RssReader.XDocumentWrapper.csproj" />
+    <ProjectReference Include="..\RssReaderJsonConfigReader\RssReaderJsonConfigReader.csproj" />
     <ProjectReference Include="..\RssReader\RssReader.csproj" />
   </ItemGroup>
 

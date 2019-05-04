@@ -1,0 +1,14 @@
+{
+  "Formaters": {
+    "ParseFormat": [
+      "<p>",
+      "</p>",
+      "<strong>",
+      "</strong>",
+      "&nbsp;",
+      "&ndash;",
+      "&quot;",
+      "&bdquo;"
+    ]
+  }
+}

@@ -17,7 +17,7 @@ namespace RssReader.ModelFactory.Format.Models.RssFeed
 
         public BaseRssFeed Trim(BaseRssFeed model)
         {
-            foreach (var trimElement in this.formatingElements.FormatElements)
+            foreach (var trimElement in this.formatingElements.GetFormatElements())
             {
                 model.Description = model.Description.Replace(trimElement, "").Trim();
                 model.Link = model.Link.Replace(trimElement, "").Trim();

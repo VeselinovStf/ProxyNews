@@ -7,6 +7,8 @@
   <ItemGroup>
     <ProjectReference Include="..\RssReader.ModelFactory.Format.Abstract\RssReader.ModelFactory.Format.Abstract.csproj" />
     <ProjectReference Include="..\RssReader.Models.Implementations\RssReader.Models.Implementations.csproj" />
+    <ProjectReference Include="..\RssReaderConfigurations\RssReaderConfigurations.csproj" />
+    <ProjectReference Include="..\RssReaderJsonConfigReader.Abstract\RssReaderJsonConfigReader.Abstract.csproj" />
   </ItemGroup>
 
 </Project>

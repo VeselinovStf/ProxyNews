@@ -21,6 +21,9 @@ using RssReader.ModelFactory.Format.Abstract;
 using RssReader.ModelFactory.Format.Models.RssFeed;
 using RssReader.ModelFactory.Format.Models;
 using RssReader.ModelFactory.XElementInterpretator.Convertors;
+using RssReaderJsonConfigReader.Abstract;
+using RssReaderConfigurations;
+using RssReaderJsonConfigReader;
 
 namespace Utility.RssReading.RssReader.Core.Container
 {
@@ -52,6 +55,9 @@ namespace Utility.RssReading.RssReader.Core.Container
             services.AddScoped<IModelFactoryFormatingElement, FormatingElement>();
             services.AddScoped<IXElementToString, ConvertFromXElement>();
             services.AddScoped<IXElementToImageProps, ConvertFromXElement>();
+            services.AddScoped<IFormatConvert<FormattingElements>, FormatConverter>();
+            services.AddScoped<IConvertJson<FormattingElements>, FormatingElementJsonReader>();
+            services.AddScoped<IRssReaderJsonReader, RssReaderJsonReader>();
         }
     }
 }
