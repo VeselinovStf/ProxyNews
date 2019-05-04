@@ -1,13 +1,22 @@
 ﻿using RssReader.ModelFactory.WElementInterpretator.Abstract;
+using RssReaderDateTimeWrapper.Abstract;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Text;
 using System.Xml.Linq;
 
 namespace RssReader.ModelFactory.XElementInterpretator.Convertors
 {
-    public class ConvertFromXElement : IXElementToString, IXElementToImageProps
+    public class ConvertFromXElement : IXElementToString, IXElementToImageProps, IXelementToDateTime
     {
+        private readonly IDateTimeParser dateTimeParser;
+
+        public ConvertFromXElement(IDateTimeParser dateTimeParser)
+        {
+            this.dateTimeParser = dateTimeParser;
+        }
+
         public string Get(string elementName, XElement element)
         {
             return (string)element.Element(elementName);
@@ -50,6 +59,23 @@ namespace RssReader.ModelFactory.XElementInterpretator.Convertors
             }
 
             throw new ArgumentException("Boom...");
+        }
+
+        DateTime IXelementToDateTime.Get(string elementName, XElement element)
+        {
+            var elementDateTime = element.Element(elementName).Value;
+
+            try
+            {
+                //TODO : Remove hard Coded format for dateTime
+                var convertedToDateTime = this.dateTimeParser.Parse(elementDateTime, "ddd, dd MMM yyyy HH:mm:ss zzz", CultureInfo.InvariantCulture);
+
+                return convertedToDateTime;
+            }
+            catch (Exception ex)
+            {
+                throw new ArgumentException("Can't parse DateTime");
+            }
         }
     }
 }

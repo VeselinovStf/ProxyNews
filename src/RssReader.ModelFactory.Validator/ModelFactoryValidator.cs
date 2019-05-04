@@ -23,7 +23,7 @@ namespace RssReader.ModelFactory.Validator
                     Title = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.Title, "Title"),
                     Link = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.Link, "Link"),
                     Description = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.Description, "Description"),
-                    PubDate = this.factoryStringValidator.StringIsNullOrWhiteSpace(x.PubDate, "PubDate"),
+                    PubDate = x.PubDate,
                     ImageALT = x.ImageALT,
                     ImageSRC = x.ImageSRC
                 };

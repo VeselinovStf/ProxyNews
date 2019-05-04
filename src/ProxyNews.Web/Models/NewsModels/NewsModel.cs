@@ -13,7 +13,7 @@ namespace ProxyNews.Web.Models.NewsModels
 
         public string Link { get; set; }
 
-        public string PubDate { get; set; }
+        public DateTime PubDate { get; set; }
 
         public string ImageALT { get; set; }
 

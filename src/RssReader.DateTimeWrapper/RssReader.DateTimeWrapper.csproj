@@ -5,8 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RssReader.ModelFactory.WElementInterpretator.Abstract\RssReader.ModelFactory.WElementInterpretator.Abstract.csproj" />
-    <ProjectReference Include="..\RssReader.Models.Implementations\RssReader.Models.Implementations.csproj" />
     <ProjectReference Include="..\RssReaderDateTimeWrapper.Abstract\RssReaderDateTimeWrapper.Abstract.csproj" />
   </ItemGroup>
 

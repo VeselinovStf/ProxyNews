@@ -21,7 +21,6 @@ namespace RssReader.ModelFactory.Format.Models.RssFeed
             {
                 model.Description = model.Description.Replace(trimElement, "").Trim();
                 model.Link = model.Link.Replace(trimElement, "").Trim();
-                model.PubDate = model.PubDate.Replace(trimElement, "").Trim();
                 model.Title = model.Title.Replace(trimElement, "").Trim();
                 model.ImageALT = model.ImageALT.Replace(trimElement, "").Trim();
                 model.ImageSRC = model.ImageSRC.Replace(trimElement, "").Trim();

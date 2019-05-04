@@ -10,7 +10,7 @@ namespace ProxyNews.Json.Models
 
         public string Link { get; set; }
 
-        public string PubDate { get; set; }
+        public DateTime PubDate { get; set; }
 
         public string ImageSRC { get; set; }
 

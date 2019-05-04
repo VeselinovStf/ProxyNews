@@ -24,6 +24,8 @@ using RssReader.ModelFactory.XElementInterpretator.Convertors;
 using RssReaderJsonConfigReader.Abstract;
 using RssReaderConfigurations;
 using RssReaderJsonConfigReader;
+using RssReaderDateTimeWrapper.Abstract;
+using RssReader.DateTimeWrapper;
 
 namespace Utility.RssReading.RssReader.Core.Container
 {
@@ -55,9 +57,11 @@ namespace Utility.RssReading.RssReader.Core.Container
             services.AddScoped<IModelFactoryFormatingElement, FormatingElement>();
             services.AddScoped<IXElementToString, ConvertFromXElement>();
             services.AddScoped<IXElementToImageProps, ConvertFromXElement>();
+            services.AddScoped<IXelementToDateTime, ConvertFromXElement>();
             services.AddScoped<IFormatConvert<FormattingElements>, FormatConverter>();
             services.AddScoped<IConvertJson<FormattingElements>, FormatingElementJsonReader>();
             services.AddScoped<IRssReaderJsonReader, RssReaderJsonReader>();
+            services.AddScoped<IDateTimeParser, RssReaderDateTime>();
         }
     }
 }

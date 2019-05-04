@@ -1,4 +1,5 @@
 ﻿using RssReader.Model.Abstract;
+using System;
 using Utility.RssReading.RssReader.Model.Abstract;
 
 namespace Utility.RssReading.RssReader.Models.Implementations
@@ -9,7 +10,7 @@ namespace Utility.RssReading.RssReader.Models.Implementations
         {
         }
 
-        public BaseRssFeed(string title, string description, string link, string pubDate)
+        public BaseRssFeed(string title, string description, string link, DateTime pubDate)
         {
             this.Title = title;
             this.Description = description;
@@ -18,7 +19,7 @@ namespace Utility.RssReading.RssReader.Models.Implementations
         }
 
         public BaseRssFeed(
-            string title, string description, string link, string pubDate,
+            string title, string description, string link, DateTime pubDate,
             string imageSRC, string imageALT
             )
             : this(title, description, link, pubDate)
@@ -31,7 +32,7 @@ namespace Utility.RssReading.RssReader.Models.Implementations
         public string Description { get; set; }
         public string Link { get; set; }
 
-        public string PubDate { get; set; }
+        public DateTime PubDate { get; set; }
         public string ImageSRC { get; set; }
         public string ImageALT { get; set; }
     }
