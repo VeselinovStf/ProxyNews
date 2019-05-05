@@ -9,6 +9,7 @@ using RssReader.ModelFactory.Validator.Abstract;
 using Microsoft.Extensions.Logging;
 using RssReader.ModelFactory.WElementInterpretator.Abstract;
 using RssReader.ModelFactory.Format.Abstract;
+using System.Threading.Tasks;
 
 namespace Utility.RssReading.RssReader.ModelFactory.Implementation.RssFeed
 {
@@ -31,7 +32,7 @@ namespace Utility.RssReading.RssReader.ModelFactory.Implementation.RssFeed
             this.modelFormatter = modelFormatter;
         }
 
-        public IEnumerable<BaseRssFeed> Create(IEnumerable<XElement> elements)
+        public async Task<IEnumerable<BaseRssFeed>> Create(IEnumerable<XElement> elements)
         {
             IList<BaseRssFeed> RSSFeedData = new List<BaseRssFeed>();
             foreach (var e in elements)
@@ -42,7 +43,7 @@ namespace Utility.RssReading.RssReader.ModelFactory.Implementation.RssFeed
 
                     RSSFeedData.Add(
                         this.modelFactoryValidator.ValidateRssFeedModel(
-                            this.modelFormatter.Trim(modelFromXElement)
+                            await this.modelFormatter.Trim(modelFromXElement)
                             )
                        );
                 }

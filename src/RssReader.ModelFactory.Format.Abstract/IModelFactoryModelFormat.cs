@@ -1,9 +1,10 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace RssReader.ModelFactory.Format.Abstract
 {
     public interface IModelFactoryModelFormat<T>
     {
-        T Trim(T model);
+        Task<T> Trim(T model);
     }
 }

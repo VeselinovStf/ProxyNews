@@ -10,19 +10,19 @@ namespace RssReader.API.Controllers
     [ApiController]
     public class ModelConfigurationController : ControllerBase
     {
-        public IActionResult Update(string propName)
-        {
-            return Ok("change prop");
-        }
+        //public IActionResult Update(string propName)
+        //{
+        //    return Ok("change prop");
+        //}
 
-        public IActionResult Insert(string propName)
-        {
-            return Ok("add prop");
-        }
+        //public IActionResult Insert(string propName)
+        //{
+        //    return Ok("add prop");
+        //}
 
-        public IActionResult Remove(string propName)
-        {
-            return Ok("add prop");
-        }
+        //public IActionResult Remove(string propName)
+        //{
+        //    return Ok("add prop");
+        //}
     }
 }

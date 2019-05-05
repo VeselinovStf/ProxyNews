@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 using Utility.RssReading.RssReader.Models.Implementations;
 
 namespace RssReader.ModelFactory.Format.Models.RssFeed
@@ -15,9 +16,9 @@ namespace RssReader.ModelFactory.Format.Models.RssFeed
             this.formatingElements = formatingElements;
         }
 
-        public BaseRssFeed Trim(BaseRssFeed model)
+        public async Task<BaseRssFeed> Trim(BaseRssFeed model)
         {
-            foreach (var trimElement in this.formatingElements.GetFormatElements())
+            foreach (var trimElement in await this.formatingElements.GetFormatElementsAsync())
             {
                 model.Description = model.Description.Replace(trimElement, "").Trim();
                 model.Link = model.Link.Replace(trimElement, "").Trim();

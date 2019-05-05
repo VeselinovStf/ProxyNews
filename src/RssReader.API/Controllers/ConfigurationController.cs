@@ -10,11 +10,7 @@ namespace RssReader.API.Controllers
     [ApiController]
     public class ConfigurationController : ControllerBase
     {
-        public IActionResult ViewAll()
-        {
-            return Ok("value all");
-        }
-
+        [HttpGet]
         public IActionResult Get(string confName)
         {
             return Ok("value single");

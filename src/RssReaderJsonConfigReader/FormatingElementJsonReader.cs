@@ -16,6 +16,11 @@ namespace RssReaderJsonConfigReader
             this.jsonToString = jsonToString;
         }
 
+        /// <summary>
+        /// Deserialize Json file to Specific model
+        /// </summary>
+        /// <param name="fileName">json file name</param>
+        /// <returns></returns>
         public FormattingElements GetContent(string fileName)
         {
             var items = JsonConvert.DeserializeObject<

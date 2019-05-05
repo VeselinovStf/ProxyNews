@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProxyNews.API.Models;
+using System.Threading.Tasks;
 using Utility.RssReading.RssReader.Abstract;
 using Utility.RssReading.RssReader.Model.Abstract;
 
@@ -18,11 +19,11 @@ namespace ProxyNews.API.Controllers
 
         // GET api/values
         [HttpGet]
-        public ActionResult<RssFeedListModel> GetAll()
+        public async Task<ActionResult<RssFeedListModel>> GetAll()
         {
             try
             {
-                var RSSFeedData = this.rssFeedRepo.GetListedFeed("item");
+                var RSSFeedData = await this.rssFeedRepo.GetListedFeed("item");
 
                 if (RSSFeedData == null)
                 {

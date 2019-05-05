@@ -8,6 +8,17 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.2.0" PrivateAssets="All" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="4.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\Format\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RssReader.JsonFormatConfigService.Abstract\RssReader.JsonFormatConfigService.Abstract.csproj" />
+    <ProjectReference Include="..\RssReader.JsonFormatConfigService\RssReader.JsonFormatConfigService.csproj" />
+    <ProjectReference Include="..\RssReaderJsonConfigReader\RssReaderJsonConfigReader.csproj" />
   </ItemGroup>
 
 </Project>

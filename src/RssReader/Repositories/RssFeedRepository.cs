@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace Utility.RssReading.RssReader.Repositories
 {
@@ -30,7 +31,7 @@ namespace Utility.RssReading.RssReader.Repositories
             this.feedDb = feedDb;
         }
 
-        public IEnumerable<IEnumerable<IRssFeed>> GetListedFeed(string descendantElementName)
+        public async Task<IEnumerable<IEnumerable<IRssFeed>>> GetListedFeed(string descendantElementName)
         {
             var rssFeed = this.feedDb.GetFeed();
 
@@ -42,22 +43,22 @@ namespace Utility.RssReading.RssReader.Repositories
 
                 var xml = this.xDocument.Parse(RSSData);
 
-                var a = this.rssFeedModelFactory
-                    .Create(xml.Descendants(descendantElementName)).ToList();
+                var a = await this.rssFeedModelFactory
+                    .Create(xml.Descendants(descendantElementName));
 
-                RSSFeedData.Add(a);
+                RSSFeedData.Add(a.ToList());
             }
 
             return RSSFeedData;
         }
 
-        public IEnumerable<IRssFeed> GetSpecificFeed(string RSSURL, string descendantElementName)
+        public async Task<IEnumerable<IRssFeed>> GetSpecificFeed(string RSSURL, string descendantElementName)
         {
             var RSSData = this.webClient.DownloadString(RSSURL);
 
             var xml = this.xDocument.Parse(RSSData);
 
-            var RSSFeedData = this.rssFeedModelFactory
+            var RSSFeedData = await this.rssFeedModelFactory
                 .Create(xml.Descendants(descendantElementName));
 
             return RSSFeedData;
