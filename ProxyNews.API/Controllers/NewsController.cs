@@ -17,9 +17,10 @@ namespace ProxyNews.API.Controllers
             this.rssFeedRepo = rssFeedRepo;
         }
 
-        // GET api/values
+     
         [HttpGet]
         public async Task<ActionResult<RssFeedListModel>> GetAll()
+        
         {
             try
             {

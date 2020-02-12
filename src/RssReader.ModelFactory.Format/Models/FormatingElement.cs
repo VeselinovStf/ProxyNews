@@ -39,7 +39,7 @@ namespace RssReader.ModelFactory.Format.Models
         {
             using (var client = new HttpClient())
             {
-                client.BaseAddress = new Uri("https://localhost:44372");
+                client.BaseAddress = new Uri("https://localhost:44333");
 
                 var response = await client.GetAsync($"/api/FormatConfiguration");
                 var stringResult = await response.Content.ReadAsStringAsync();

@@ -32,26 +32,22 @@ namespace Utility.RssReading.RssReader.ModelFactory.Implementation.RssFeed
             this.modelFormatter = modelFormatter;
         }
 
+        //TODO: EDIT IN FUTURE
+        /// <summary>
+        /// API DEMO METHOD
+        /// </summary>
+        /// <param name="elements"></param>
+        /// <returns></returns>
         public async Task<IEnumerable<BaseRssFeed>> Create(IEnumerable<XElement> elements)
         {
-            IList<BaseRssFeed> RSSFeedData = new List<BaseRssFeed>();
-            foreach (var e in elements)
-            {
-                try
-                {
-                    var modelFromXElement = this.xElementToModel.XElementToModel(e);
-
-                    RSSFeedData.Add(
-                        this.modelFactoryValidator.ValidateRssFeedModel(
-                            await this.modelFormatter.Trim(modelFromXElement)
-                            )
-                       );
-                }
-                catch (Exception ex)
-                {
-                    this.logger.LogWarning(ex.Message);
-                }
-            }
+            var RSSFeedData = (from x in elements
+                               select new BaseRssFeed
+                               {
+                                   Title = ((string)x.Element("title")),
+                                   Link = ((string)x.Element("link")),
+                                   Description = ((string)x.Element("description")),
+                                   
+                               });
 
             return RSSFeedData;
         }

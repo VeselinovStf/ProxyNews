@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.572
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utility", "Utility", "{F8605E62-EA7B-4A91-85F0-A37B01CABDAF}"
 EndProject
@@ -127,11 +127,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "JsonContentServices", "Json
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FormatConfigurationServices", "FormatConfigurationServices", "{4911F25E-47C9-4579-84DE-0CCAB95D5B33}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.JsonFormatConfigService", "RssReader.JsonFormatConfigService\RssReader.JsonFormatConfigService.csproj", "{F7211BF1-5411-4080-9D9F-6619E80E62A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssReader.JsonFormatConfigService", "RssReader.JsonFormatConfigService\RssReader.JsonFormatConfigService.csproj", "{F7211BF1-5411-4080-9D9F-6619E80E62A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.JsonFormatConfigService.Abstract", "RssReader.JsonFormatConfigService.Abstract\RssReader.JsonFormatConfigService.Abstract.csproj", "{B4A07467-71E5-4A19-B093-00C40ADED96B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssReader.JsonFormatConfigService.Abstract", "RssReader.JsonFormatConfigService.Abstract\RssReader.JsonFormatConfigService.Abstract.csproj", "{B4A07467-71E5-4A19-B093-00C40ADED96B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssReader.JsonFormatConfigService.Dtos", "RssReader.JsonFormatConfigService.Dtos\RssReader.JsonFormatConfigService.Dtos.csproj", "{E1383D71-9CCE-4B33-ADBF-684C028E8825}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RssReader.JsonFormatConfigService.Dtos", "RssReader.JsonFormatConfigService.Dtos\RssReader.JsonFormatConfigService.Dtos.csproj", "{E1383D71-9CCE-4B33-ADBF-684C028E8825}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C1E9E995-16B6-4637-9817-89049906E2BD}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

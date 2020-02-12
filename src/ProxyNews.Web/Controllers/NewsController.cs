@@ -66,6 +66,7 @@ namespace ProxyNews.Web.Controllers
             return RedirectToAction("Error", "News");
         }
 
+        // No API USE of RRS Reader
         //[HttpPost]
         //public ActionResult Index(NewsModel model)
         //{
